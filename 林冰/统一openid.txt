@@ -1,0 +1,2 @@
+查询别人用户的接口的openid统一使用以下openid：
+oIxOZ5UvNRnUCxIsJ2EUVg6LVfDA

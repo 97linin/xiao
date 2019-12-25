@@ -1,0 +1,147 @@
+<!--logs.wxml-->
+<view class="container">
+  <!-- 背景虚化 -->
+
+ 
+  <!-- 内容 -->
+   <form bindsubmit='formSubmit' class='form' >
+  <view class='content'>
+  
+  <view class='part'>
+   <view class="bg">
+  <image class="bg-image" mode="scaleToFill"></image>
+  </view>
+    <!-- 模块一 -->
+    <view class='part1'  bindtap='choose'>
+     <!-- <view style='padding-top:180rpx;'>点击"这里"可上传或更换封面</view>
+     <view>(建议图片比例4:3)</view> -->
+  <view class='word'>
+  <text>点击"这里"可上传或更换封面</text>
+  <view>(建议图片比例4:3)</view>
+  </view>
+  <block wx:for="{{imags}}">
+  <view class='img'>
+  <image src='{{item}}'></image>
+  </view>
+ </block>
+ <!-- 获取头像 -->
+      <view class="userinfo-avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+    </view>
+    <!--模块一结束 -->
+    <view class='part2'>
+      
+      <view class='card'>
+          <input type='text' placeholder='{{input_name}}' name='name' confirm-type="done" />
+        <view class='small'>
+          <input type='text' value='CEO总裁' name="position"></input>
+        </view>
+        <view>
+          <input type='text' value='丁丁信息科技有限公司' name='company'></input>
+        </view>
+      </view>
+    </view>
+    <!--模块二结束 -->
+    <view class='part3'>
+      <!-- 手机 -->
+      <view class='message'>
+        <image src='../../image/iconset0227.png' class='image'></image>
+        <view class='text' style="display:flex;">
+          <label>手机 :</label>
+          <input type='text' value='13528286805' name="tel"></input>
+        </view>
+      </view>
+      <!-- 微信 -->
+      <view class='message'>
+        <image src='../../image/weixin.png' class='image'></image>
+        <view class='text' style="display:flex;">
+          <label>微信：</label>
+          <input type='text' value='卡丁' name="wechat"></input>
+        </view>
+      </view>
+      <!-- 邮箱 -->
+      <view class='message'>
+        <image src='../../image/youxiang.png' class='image'></image>
+        <view class='text' style="display:flex;">
+          <label>邮箱 :</label>
+          <input type='text' value='511008190@qq.com' name="email" ></input>
+        </view>
+      </view>
+      <!-- 地址 -->
+      <view class='message'>
+        <image src='../../image/dizhi.png' class='image' style='post'></image>
+        <view class='text' style="display:flex;">
+          <label>地址 :</label>
+          <textarea  bindinput='bindKeyInput' placeholder='{{input_code}}' name="addrress" value='{{address}}'></textarea>
+          <image src='../../image/dizhi1.png' class='image-dizhi' bindtap='chooseLocation'></image>
+        </view>
+      </view>
+    </view>
+    </view>
+    <!-- part3结束 -->
+    
+    <view class='part4'>
+      <!--小模块1 -->
+      <view class='about'>
+        <view class='heading'>简介</view>
+        <view class='eng'>ABOUT</view>
+      </view>
+      <view class='box'>
+        <textarea value='textarea!' name="textarea" style='height:8em;'></textarea>
+      </view>
+      <!-- 小模块2 -->
+      <view class='about' style='margin-top:100rpx;'>
+        <view class='heading'>其他信息</view>
+        <view class='eng'>OTHER INFO</view>
+      </view>
+      <view class='box'>
+        <view class='message'>
+          <image src='../../image/lianjie.png' class='image'></image>
+          <text>网址 :</text>
+        </view>
+         <input type='text' value='www.baidu.com' name="http"></input>
+        <view class='message'>
+          <image src='../../image/zuoji-.png' class='image'></image>
+          <text>公司电话</text>
+        </view>
+        <input type='text' value='0760-xxxxxx' name="phone"></input>
+      </view>
+      <!-- 小模块3 -->
+      <view class='photo'>
+      <view class='about'>
+        <view class='heading'>相册</view>
+        <view class='eng'>Albnm</view>
+      </view>
+
+      <view class='exclusive'>
+  
+  <block wx:if='{{imgs}}'>
+  <block wx:for="{{imgs}}" >
+  <view class='img'>
+        <image src='../../image/lajitong.png'  bindlongpress='deleteImage' bindtap='deleteImage' class='lajitong'  data-imgid="{{index}}"></image>
+      <image src='{{item}}' bindtap='previewImge' class='plan'></image>
+    </view>
+  </block>
+  </block>
+  <!-- 放置图片 -->
+  <view class='add' bindtap='chooseImage'>
+       <view>点击选择图片</view>
+       <view>建议图片比列4:3</view>
+  </view>
+      </view>
+      </view>
+      <!-- 公司logo -->
+       <view class='sd'> <image class='ap' src='../../image/image/2.jpg'></image></view>
+    </view>
+    <!-- part4结束 -->
+
+    <!-- 底部按钮 -->
+    <view class='part5'>
+     <button formType="submit" class='save'><text>保存</text></button>
+    </view>
+   
+    <!-- 内容结束 -->
+  </view>
+    </form>
+</view>

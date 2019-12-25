@@ -1,0 +1,46 @@
+<!--pages/fukuang/fukuang.wxml-->
+ <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{movies}}" wx:for-index="index">  
+        <swiper-item>  
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+  </swiper>
+<view class="wrapper">
+
+<view class="static-item">
+  <view class='static-list{{idx==index?"static-on":""}}'wx:for='{{static}}' bindtap='changeStatic'style='color:{{color}}' data-idx="{{index}}">
+   <view bindtap='color'><text>{{item}}</text></view>
+  </view>
+  </view>
+
+
+  <swiper class="my-swiper" current="{{idx}}">
+  
+  <block >
+    <swiper-item class="yy">
+    <view class='content'> 
+    <view class='xxx'>++++++</view>
+
+    
+     
+     
+ 
+ 
+  
+</view>
+    </swiper-item>
+  </block>
+
+  <block >
+    <swiper-item class="yy">
+    <view class='content'> 
+      <view class='xxx1'>++++++</view>
+    
+</view>
+    </swiper-item>
+  </block>
+
+ </swiper>
+</view>
+ <button class='mp' bindtap='shouye'>返回我的首页</button>

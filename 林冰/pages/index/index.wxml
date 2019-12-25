@@ -1,0 +1,158 @@
+
+<view class="container">
+
+  <!-- 背景虚化 -->
+  <!-- <view class="bg">
+    <image class="bg-image" mode="scaleToFill"></image>
+  </view> -->
+
+  <!-- 内容 -->
+  <view class='content'>
+
+    <!-- 模块一 -->
+    <view class='part'>
+
+  <view class="bg">
+  
+  <image class="bg-image" mode="scaleToFill"></image>
+  </view>
+  
+  
+
+
+<view class='part1'>
+
+      <!-- 二维码 -->
+      <image src='../../image/erweima.png' class='erweima' bindtap='erweima'></image>
+      <!-- 被收藏 人气 -->
+      <view class='part1-box'>
+        <view class='collect' bindtap='collect'>
+          <image src='../../image/wujiaoxing.png' class='wujiao'></image>
+          <text>0</text>
+          <view class='text'>被收藏</view>
+        </view>
+        <view class='supergroup' bindtap='supergroup'>
+          <image src='../../image/ren.png' class='ren'></image>
+          <text>0</text>
+          <view class='text'>人气值</view>
+        </view>
+      </view>
+      <!-- 被收藏 人气结束 -->
+    </view>
+    <!--模块一结束 -->
+    <view class='part2'>
+      <!-- 获取头像 -->
+      <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      
+    </block>
+      </view>
+      <view class='card'>
+         <view><input type='text' name="name" value='{{name}}'/></view>
+        <view class='small'>
+       <input type='text' name="position" value='{{position}}'/></view>
+        <view><input type='text' name="company" value='{{company}}'/></view>
+      </view>
+    </view>
+    <!--模块二结束 -->
+     <view class='part3'>
+      <!-- 手机 -->
+      <view class='message'>
+        <image src='../../image/iconset0227.png' class='image'></image>
+        <view class='text' style="display:flex;">
+          <label>手机 :</label>
+          <input type='text' value='{{tel}}' name="tel"></input>
+        </view>
+      </view>
+      <!-- 微信 -->
+      <view class='message'>
+        <image src='../../image/weixin.png' class='image'></image>
+        <view class='text' style="display:flex;">
+          <label>微信：</label>
+          <input type='text' value='{{wechat}}' name="wechat"></input>
+        </view>
+      </view>
+      <!-- 邮箱 -->
+      <view class='message'>
+        <image src='../../image/youxiang.png' class='image'></image>
+        <view class='text' style="display:flex;">
+          <label>邮箱 :</label>
+          <input type='text' value='{{email}}' name="email" ></input>
+        </view>
+      </view>
+      <!-- 地址 -->
+      <view class='message'>
+        <image src='../../image/dizhi.png' class='image' style='post'></image>
+        <view class='text' style="display:flex;">
+          <label>地址 :</label>
+          <textarea  bindinput='bindKeyInput' name="addrress" value='{{addrress}}'></textarea>
+         
+        </view>
+      </view>
+    </view>
+    </view>
+    <!-- part3结束 -->
+  
+  
+    <view class='part4'>
+      <!--小模块1 -->
+      <view class='about'>
+        <view class='heading'>简介</view>
+        <view class='eng'>ABOUT</view>
+      </view>
+      <view class='box'>
+        <textarea value='{{textarea}}' style='height:8em;' name="textarea"></textarea>
+      </view>
+      <!-- 小模块2 -->
+      <view class='about' style='margin-top:100rpx;'>
+        <view class='heading'>其他信息</view>
+        <view class='eng'>OTHER INFO</view>
+      </view>
+     <view class='box'>
+        <view class='message'>
+          <image src='../../image/lianjie.png' class='image'></image>
+          <text>网址 :</text>
+        </view>
+         <input type='text' value='{{http}}' name="http"></input>
+        <view class='message'>
+          <image src='../../image/zuoji-.png' class='image'></image>
+          <text>公司电话</text>
+        </view>
+        <input type='text' value='{{phone}}' name="phone"></input>
+      </view>
+      <!-- 小模块3 -->
+      <view class='about'>
+        <view class='heading'>相册</view>
+        <view class='eng'>Albnm</view>
+           
+      </view>
+     <view class='xx'> <image class='ad' src='../../image/image/3.jpg'></image></view>
+        <view class='xx'> <image class='ad' src='../../image/image/4.jpg'></image></view>
+      <!-- 公司logo -->
+
+      <view class='sd'> <image class='ap' src='../../image/image/2.jpg'></image></view>
+
+      
+     
+    </view>
+    <!-- part4结束 -->
+
+    <!-- 底部按钮 -->
+    <view class='part5'>
+      <view class='button'>
+        <text>一键分享</text>
+      </view>
+      <view class='button' style='position: relative;left:30rpx;' bindtap='log'>
+        <text>编辑信息</text>
+      </view>
+      <view class='small-button' bindtap='dianhuabu'>
+        <image src='../../image/dianhuaben.png'></image>
+      </view>
+        </view>
+    </view>
+    <!-- 内容结束 -->
+
+
+</view>

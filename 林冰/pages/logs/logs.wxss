@@ -1,0 +1,254 @@
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #8BA0B1;
+}
+.sd{width: 100%;height: 100px}
+.xx{width: 90%;height:200px;margin: 0 auto;margin-top: 10px}
+.ad{width: 100%;height:100%}
+.ap{width: 100%;height: 80px}
+.container {
+  margin: 0 auto;
+  padding: 0;
+}
+.form{
+  width: 100%;
+}
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bg-image {
+  position: absolute;
+ height: 1300rpx;
+ width: 100%;
+  top: 20rpx;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553621206538&di=2dd9bd0176f6019be82b33d306912ee1&imgtype=0&src=http%3A%2F%2Fimg15.3lian.com%2F2015%2Ff2%2F57%2Fd%2F93.jpg') no-repeat #000;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(18px);
+}
+
+.part1 {
+  width: 90%;
+  height: 450rpx;
+  margin: 0 auto;
+  background-color: #8BA0B1;
+  background-size: cover;
+  margin-top: 100rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  color: red;
+  text-align: center;
+}
+.part1 .img{
+  width: 100%;
+  height: 100%;
+}
+.part1 image{
+  width: 100%;
+  height: 100%;
+}
+.part1 .word{
+  position: absolute;
+  top: 280rpx;
+  left: 140rpx;
+}
+
+/* part1打上 */
+
+.userinfo-avatar {
+  overflow: hidden;
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 470rpx;
+  left: 40%;
+}
+
+.part2 {
+  width: 90%;
+  height: 330rpx;
+  margin: 0 auto;
+  border-radius: 25rpx;
+  overflow: hidden;
+  background-color: #f5f6f8;
+}
+
+.card {
+  text-align: center;
+  height: 300rpx;
+  padding-top: 80rpx;
+}
+
+.small {
+  font-size: 30rpx;
+  padding: 20rpx 0rpx;
+}
+
+.part3 {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 25rpx;
+  background-color: #f5f6f8;
+  border-top: 3px dashed #dee2e3;
+  font-size: 33rpx;
+  padding: 45rpx 0rpx;
+}
+
+.message {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 90rpx;
+  display: flex;
+  
+}
+
+.message textarea {
+  width: 350rpx;
+  height: auto;
+  border: 1px dashed white;
+  line-height: 50rpx;
+  position: relative;
+  top:20rpx; 
+
+}
+
+.image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+  position: relative;
+  top: 15rpx;
+}
+
+.part3 input {
+  width: 445rpx;
+  position: relative;
+  top: 15rpx;
+  border: 1px dashed white;
+}
+
+.part3 label {
+  width: 110rpx;
+}
+
+.image-dizhi {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.part4 {
+  color: white;
+}
+
+.about {
+  width: 85%;
+  height: 110rpx;
+  border-left: 5px solid #336ca9;
+  margin: 0 auto;
+  padding-left: 20rpx;
+}
+
+.box {
+  width: 85%;
+  height: auto;
+  border: 1px dashed #dee2e3;
+  padding: 10px 0px;
+  margin: 0 auto;
+  margin-top: 50rpx;
+}
+
+.box input {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px dashed white;
+}
+
+.part4 text {
+  padding-right: 20rpx;
+}
+
+.about {
+  margin-top: 100rpx;
+}
+
+.eng {
+  font-size: 25rpx;
+}
+
+.add {
+  width: 100%;
+  height: 200rpx;
+  border: 1px dashed white;
+  text-align: center;
+  padding-top: 100rpx;
+}
+
+.lajitong {
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  float: right;
+  position: absolute;
+  right: 50rpx;
+}
+
+.exclusive {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 50rpx;
+}
+
+.img {
+  height: auto;
+}
+
+.img .plan {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 100rpx;
+  height: auto;
+}
+
+.part5 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  padding-bottom: 40rpx;
+}
+
+button {
+  width: 255rpx;
+  height: 90rpx;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 50rpx;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+
+button text {
+  position: relative;
+  top: -5rpx;
+  color: white;
+}

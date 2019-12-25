@@ -1,0 +1,5 @@
+/* pages/txl/txl.wxss */
+.content{width: 100%;color:white;background-color: rgb(148, 184, 224);height: 600px;text-align: center}
+.zi{font-size: 40px;margin-bottom: 100px;margin-top: 20px}
+.aaa{width: 30px;height: 30px;margin-bottom: 0px}
+.swiper{ padding-top: 80px;height: 200px}

@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/dianhuabu/dianhuabu",
+    "pages/collect/collect",
+    
+    "pages/name/name",
+    "pages/erweima/erweima"
+
+  ],
+  "window":{
+    "navigationStyle": "custom"
+  }
+}

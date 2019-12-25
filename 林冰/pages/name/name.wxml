@@ -1,0 +1,23 @@
+<!--pages/erweima/erweima.wxml-->
+<view class='content'>
+<text class='car'>我的名片</text>
+<view class='box'>
+<view class='part1'>
+<!-- 头像 -->
+<view class="userinfo-avatar">
+  <open-data type="userAvatarUrl"></open-data>
+</view>
+<!-- 信息 -->
+<view class='message'>
+<text>{{name}}</text>
+<text class='gray'>{{position}}</text>
+<view>{{company}}</view>
+</view>
+</view>
+
+<view class='part2'>
+<image src='{{er}}' mode="cover"></image>
+</view>
+
+</view>
+</view>
